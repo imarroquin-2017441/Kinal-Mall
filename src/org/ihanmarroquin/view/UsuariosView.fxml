@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #000000; -fx-border-color: #EDDB27;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ihanmarroquin.controller.UsuarioController">
+   <children>
+      <AnchorPane layoutX="328.0" layoutY="-108.0" prefHeight="400.0" prefWidth="9.0" rotate="59.0" style="-fx-background-color: #282C2C;" />
+      <AnchorPane prefHeight="450.0" prefWidth="217.0" style="-fx-background-color: #EDDB27;">
+         <children>
+            <AnchorPane layoutY="41.0" prefHeight="109.0" prefWidth="217.0" style="-fx-background-color: #000000;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="9.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Usuario.png" />
+                     </image></ImageView>
+               </children></AnchorPane>
+            <Label layoutX="58.0" layoutY="7.0" text="Usuarios">
+               <font>
+                  <Font name="Britannic Bold" size="26.0" />
+               </font>
+            </Label>
+            <VBox layoutX="25.0" layoutY="235.0" prefHeight="116.0" prefWidth="169.0">
+               <children>
+                  <Button fx:id="btnNuevo" mnemonicParsing="false" onAction="#nuevo" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Nuevo">
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Nuevo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnCancelar" mnemonicParsing="false" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Cancelar">
+                     <graphic>
+                        <ImageView fx:id="imgCancelar" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Cancelar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="213.0" prefHeight="450.0" prefWidth="9.0" style="-fx-background-color: #0AB4E5;" />
+      <AnchorPane layoutX="526.0" layoutY="32.0" prefHeight="400.0" prefWidth="9.0" rotate="40.9" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="694.0" layoutY="-178.0" prefHeight="542.0" prefWidth="9.0" rotate="-76.0" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="352.0" layoutY="114.0" prefHeight="400.0" prefWidth="9.0" rotate="-33.7" style="-fx-background-color: #282C2C;" />
+      <GridPane layoutX="257.0" layoutY="155.0" prefHeight="247.0" prefWidth="430.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="144.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="286.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="81.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Nombre Usuario" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Apellido Usuario" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Usuario" textFill="WHITE" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Contraseña" textFill="WHITE" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtNombreUsuario" alignment="CENTER" editable="false" prefHeight="23.0" prefWidth="48.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtApellidoUsuario" alignment="CENTER" editable="false" prefHeight="23.0" prefWidth="48.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtUsuario" alignment="CENTER" editable="false" prefHeight="23.0" prefWidth="48.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPassword" alignment="CENTER" editable="false" prefHeight="23.0" prefWidth="48.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label text="Codigo Usuario" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtCodigoUsuario" alignment="CENTER" editable="false" prefHeight="23.0" prefWidth="48.0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Label layoutX="283.0" layoutY="54.0" text="Ingrese sus datos" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1450.0" style="-fx-background-color: #000000; -fx-border-color: #EDDB27;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ihanmarroquin.controller.LocalesController">
+   <children>
+      <AnchorPane layoutX="213.0" layoutY="-58.0" prefHeight="523.0" prefWidth="9.0" rotate="-35.5" style="-fx-background-color: #282C2C;" />
+      <AnchorPane prefHeight="400.0" prefWidth="217.0" style="-fx-background-color: #EDDB27;">
+         <children>
+            <AnchorPane layoutY="41.0" prefHeight="109.0" prefWidth="217.0" style="-fx-background-color: #000000;">
+               <children>
+                  <ImageView fitHeight="108.0" fitWidth="126.0" layoutX="50.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Locales.png" />
+                     </image></ImageView>
+               </children></AnchorPane>
+            <Label layoutX="65.0" layoutY="7.0" text="Locales">
+               <font>
+                  <Font name="Britannic Bold" size="26.0" />
+               </font>
+            </Label>
+            <VBox layoutX="24.0" layoutY="176.0" prefHeight="210.0" prefWidth="179.0">
+               <children>
+                  <Button fx:id="btnNuevo" mnemonicParsing="false" onAction="#nuevo" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Nuevo">
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Nuevo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Eliminar">
+                     <graphic>
+                        <ImageView fx:id="imgEliminar" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Eliminar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Editar">
+                     <graphic>
+                        <ImageView fx:id="imgEditar" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Editar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnReporte" mnemonicParsing="false" onAction="#reporte" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Reporte">
+                     <graphic>
+                        <ImageView fx:id="imgReporte" fitHeight="43.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Reporte.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="213.0" prefHeight="407.0" prefWidth="9.0" style="-fx-background-color: #0AB4E5;" />
+      <AnchorPane layoutX="1277.0" layoutY="109.0" prefHeight="350.0" prefWidth="9.0" rotate="72.2" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="954.0" layoutY="-43.0" prefHeight="172.0" prefWidth="9.0" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="1099.0" layoutY="90.0" prefHeight="388.0" prefWidth="9.0" rotate="-14.9" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="754.0" layoutY="10.0" prefHeight="523.0" prefWidth="9.0" rotate="-66.8" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="426.0" layoutY="-111.0" prefHeight="281.0" prefWidth="9.0" rotate="-60.9" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="498.0" layoutY="-50.0" prefHeight="523.0" prefWidth="9.0" rotate="22.6" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="1153.0" layoutY="-249.0" prefHeight="648.0" prefWidth="9.0" rotate="-101.3" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="871.0" layoutY="-58.0" prefHeight="523.0" prefWidth="9.0" rotate="-35.5" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="330.0" layoutY="-232.0" prefHeight="523.0" prefWidth="9.0" rotate="14.0" style="-fx-background-color: #282C2C;" />
+      <Button layoutX="675.0" layoutY="363.0" mnemonicParsing="false" onAction="#menuPrincipal" styleClass="button1" stylesheets="@../resource/BotonKinalMallCSS.css" text="Regresar" />
+      <TableView fx:id="tblLocales" layoutX="231.0" layoutY="122.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="242.0" prefWidth="1009.0">
+        <columns>
+          <TableColumn fx:id="colCodigoLocal" prefWidth="96.0" text="Codigo Local" />
+          <TableColumn fx:id="colSaldoFavor" prefWidth="169.0" text="Saldo Favor" />
+            <TableColumn fx:id="colSaldoContra" prefWidth="184.0" text="Saldo Contra" />
+            <TableColumn fx:id="colMesesPendientes" prefWidth="120.0" text="Meses Pendientes" />
+            <TableColumn fx:id="colDisponibilidad" prefWidth="98.0" text="Disponibilidad" />
+            <TableColumn fx:id="colValorLocal" prefWidth="169.0" text="Valor Local" />
+            <TableColumn fx:id="colValorAdministracion" minWidth="5.0" prefWidth="172.0" text="Valor Administracion" />
+        </columns>
+      </TableView>
+      <GridPane layoutX="277.0" layoutY="14.0" prefHeight="40.0" prefWidth="917.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="113.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.0" minWidth="0.0" prefWidth="39.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.0" minWidth="0.0" prefWidth="110.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="478.0" minWidth="10.0" prefWidth="26.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="444.0" minWidth="10.0" prefWidth="126.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="547.0" minWidth="10.0" prefWidth="119.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="713.0" minWidth="0.0" prefWidth="33.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="639.0" minWidth="10.0" prefWidth="137.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="547.0" minWidth="10.0" prefWidth="161.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="547.0" minWidth="10.0" prefWidth="73.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Código Local" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCodigoLocal" alignment="CENTER" editable="false" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label text="Saldo Favor" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Q" textFill="#d3fff6" GridPane.columnIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtSaldoFavor" alignment="TOP_RIGHT" editable="false" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label text="Saldo Contra" textFill="WHITE" GridPane.columnIndex="5">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Q" textFill="#d3fff6" GridPane.columnIndex="6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtSaldoContra" alignment="TOP_RIGHT" editable="false" GridPane.columnIndex="7">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label text="Meses Pendientes" textFill="WHITE" GridPane.columnIndex="8">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtMesesPendientes" alignment="CENTER" editable="false" prefHeight="30.0" prefWidth="86.0" GridPane.columnIndex="9">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <GridPane layoutX="332.0" layoutY="69.0" prefHeight="30.0" prefWidth="826.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="118.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="126.0" minWidth="10.0" prefWidth="61.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="102.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.0" minWidth="10.0" prefWidth="24.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.0" minWidth="10.0" prefWidth="143.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.0" minWidth="10.0" prefWidth="175.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="86.0" minWidth="10.0" prefWidth="26.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="167.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="18.0" prefWidth="120.0" text="Disponibilidad" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Valor Local" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Q" textFill="#d3fff6" GridPane.columnIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtValorLocal" alignment="TOP_RIGHT" editable="false" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label text="Valor Administracion" textFill="WHITE" GridPane.columnIndex="5">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Q" textFill="#d3fff6" GridPane.columnIndex="6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtValorAdministracion" alignment="TOP_RIGHT" editable="false" GridPane.columnIndex="7">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtDisponibilidad" alignment="CENTER" editable="false" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Button layoutX="292.0" layoutY="69.0" mnemonicParsing="false" onAction="#ventanaDisponibilidad" prefHeight="18.0" prefWidth="9.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="?">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="1342.0" layoutY="22.0" prefHeight="256.0" prefWidth="9.0" rotate="16.7" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="1273.0" layoutY="284.0" prefHeight="145.0" prefWidth="9.0" style="-fx-background-color: #282C2C;" />
+      <Button layoutX="1257.0" layoutY="234.0" mnemonicParsing="false" onAction="#ventanaCuentasPorCobrar" prefHeight="40.0" prefWidth="179.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Cuentas Por Cobrar" />
+      <ImageView fitHeight="73.0" fitWidth="124.0" layoutX="1285.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/PorCobrar.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

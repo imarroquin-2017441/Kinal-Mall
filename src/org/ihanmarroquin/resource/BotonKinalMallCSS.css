@@ -1,0 +1,54 @@
+.button1
+{
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #000000;
+    -fx-font-family: "Britannic Bold";
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+}
+
+.button1:hover
+{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+    -fx-border-color: #FFFFFF;
+    -fx-font-family: "Britannic Bold";
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+}
+
+.button1:pressed
+{
+    -fx-background-color:  #0AB4E5;
+    -fx-text-fill: #000000;
+    -fx-border-color:  #0AB4E5;
+    -fx-font-family: "Britannic Bold";
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+}
+
+.button2
+{
+    -fx-background-color:  #EDDB27;
+    -fx-text-fill: #000000;
+    -fx-border-color: #000000;
+    -fx-border-radius: 3 3 3 3;
+    -fx-font-family: "Britannic Bold";
+    -fx-font-style: italic;
+    -fx-font-size: 16px;
+}
+
+.button2:hover
+{
+    -fx-background-color: #96E7E8;
+    -fx-border-color: #96E7E8;
+    -fx-border-radius: 3 3 3 3;
+}
+
+.button2:pressed
+{
+    -fx-background-color: #C5C5C1;
+    -fx-border-color: #C5C5C1;
+    -fx-border-radius: 3 3 3 3;
+}

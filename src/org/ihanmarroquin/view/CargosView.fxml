@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1050.0" style="-fx-background-color: #000000; -fx-border-color: #EDDB27;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ihanmarroquin.controller.CargosController">
+   <children>
+      <AnchorPane layoutX="311.0" layoutY="-32.0" prefHeight="537.0" prefWidth="9.0" rotate="-24.0" style="-fx-background-color: #282C2C;" />
+      <AnchorPane prefHeight="400.0" prefWidth="217.0" style="-fx-background-color: #EDDB27;">
+         <children>
+            <AnchorPane layoutY="41.0" prefHeight="109.0" prefWidth="217.0" style="-fx-background-color: #000000;">
+               <children>
+                  <ImageView fitHeight="91.0" fitWidth="121.0" layoutX="48.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Cargos.png" />
+                     </image></ImageView>
+               </children></AnchorPane>
+            <Label layoutX="68.0" layoutY="6.0" text="Cargos">
+               <font>
+                  <Font name="Britannic Bold" size="26.0" />
+               </font>
+            </Label>
+            <VBox layoutX="24.0" layoutY="159.0" prefHeight="212.0" prefWidth="170.0">
+               <children>
+                  <Button fx:id="btnNuevo" mnemonicParsing="false" onAction="#nuevo" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Nuevo">
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Nuevo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Eliminar">
+                     <graphic>
+                        <ImageView fx:id="imgEliminar" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Eliminar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Editar">
+                     <graphic>
+                        <ImageView fx:id="imgEditar" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Editar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnReporte" mnemonicParsing="false" onAction="#reporte" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Reporte">
+                     <graphic>
+                        <ImageView fx:id="imgReporte" fitHeight="43.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Reporte.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="213.0" prefHeight="400.0" prefWidth="9.0" style="-fx-background-color: #0AB4E5;" />
+      <AnchorPane layoutX="618.0" layoutY="2.0" prefHeight="542.0" prefWidth="9.0" rotate="149.8" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="789.0" layoutY="-37.0" prefHeight="346.0" prefWidth="9.0" rotate="-33.7" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="889.0" layoutY="-22.0" prefHeight="494.0" prefWidth="9.0" rotate="7.1" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="424.0" layoutY="-86.0" prefHeight="346.0" prefWidth="9.0" rotate="-126.9" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="703.0" layoutY="93.0" prefHeight="221.0" prefWidth="9.0" rotate="48.0" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="478.0" layoutY="86.0" prefHeight="389.0" prefWidth="9.0" rotate="9.5" style="-fx-background-color: #282C2C;" />
+      <GridPane layoutX="242.0" layoutY="22.0" prefHeight="30.0" prefWidth="637.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.0" minWidth="10.0" prefWidth="117.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.0" minWidth="10.0" prefWidth="54.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="363.0" minWidth="10.0" prefWidth="132.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="332.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Código Cargo" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCodigoCargo" editable="false" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <Label text="Nombre Cargo" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtNombreCargo" editable="false" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Button layoutX="516.0" layoutY="355.0" mnemonicParsing="false" onAction="#menuPrincipal" styleClass="button1" stylesheets="@../resource/BotonKinalMallCSS.css" text="Regresar" />
+      <TableView fx:id="tblCargos" layoutX="249.0" layoutY="73.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="276.0" prefWidth="623.0">
+        <columns>
+          <TableColumn fx:id="colCodigoCargo" prefWidth="107.0" text="Código Cargo" />
+          <TableColumn fx:id="colNombreCargo" prefWidth="529.0" text="Nombre Cargo" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="996.0" layoutY="69.0" prefHeight="269.0" prefWidth="9.0" rotate="-45.0" style="-fx-background-color: #282C2C;" />
+      <Button layoutX="902.0" layoutY="206.0" mnemonicParsing="false" onAction="#ventanaEmpleados" prefHeight="38.0" prefWidth="125.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Empleados" />
+      <ImageView fitHeight="52.0" fitWidth="89.0" layoutX="920.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Empleados.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1050.0" style="-fx-background-color: #000000; -fx-border-color: #EDDB27;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ihanmarroquin.controller.TipoClienteController">
+   <children>
+      <AnchorPane layoutX="893.0" layoutY="143.0" prefHeight="324.0" prefWidth="9.0" rotate="21.8" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="942.0" layoutY="-26.0" prefHeight="357.0" prefWidth="9.0" rotate="-57.1" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="349.0" layoutY="40.0" prefHeight="444.0" prefWidth="9.0" rotate="-48.4" style="-fx-background-color: #282C2C;" />
+      <AnchorPane prefHeight="400.0" prefWidth="217.0" style="-fx-background-color: #EDDB27;">
+         <children>
+            <AnchorPane layoutX="1.0" layoutY="44.0" prefHeight="109.0" prefWidth="217.0" style="-fx-background-color: #000000;">
+               <children>
+                  <ImageView fitHeight="101.0" fitWidth="107.0" layoutX="58.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/TipoCliente.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <Label layoutX="41.0" layoutY="6.0" text="Tipo Cliente">
+               <font>
+                  <Font name="Britannic Bold" size="26.0" />
+               </font>
+            </Label>
+            <VBox layoutX="30.0" layoutY="169.0" prefHeight="200.0" prefWidth="159.0">
+               <children>
+                  <Button fx:id="btnNuevo" mnemonicParsing="false" onAction="#nuevo" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Nuevo">
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Nuevo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Eliminar">
+                     <graphic>
+                        <ImageView fx:id="imgEliminar" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Eliminar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Editar">
+                     <graphic>
+                        <ImageView fx:id="imgEditar" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Editar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnReporte" mnemonicParsing="false" onAction="#reporte" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Reporte">
+                     <graphic>
+                        <ImageView fx:id="imgReporte" fitHeight="43.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Reporte.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="213.0" prefHeight="407.0" prefWidth="9.0" style="-fx-background-color: #0AB4E5;" />
+      <AnchorPane layoutX="730.0" layoutY="21.0" prefHeight="407.0" prefWidth="9.0" rotate="18.4" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="491.0" layoutY="-182.0" prefHeight="526.0" prefWidth="9.0" rotate="-108.4" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="794.0" layoutY="-51.0" prefHeight="462.0" prefWidth="9.0" style="-fx-background-color: #282C2C;" />
+      <AnchorPane layoutX="307.0" layoutY="-34.0" prefHeight="175.0" prefWidth="9.0" rotate="-9.5" style="-fx-background-color: #282C2C;" />
+      <Button layoutX="518.0" layoutY="355.0" mnemonicParsing="false" onAction="#menuPrincipal" styleClass="button1" stylesheets="@../resource/BotonKinalMallCSS.css" text="Regresar" />
+      <TableView fx:id="tblTipoCliente" layoutX="238.0" layoutY="63.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="288.0" prefWidth="648.0">
+        <columns>
+          <TableColumn fx:id="colCodigoTipoCliente" prefWidth="123.0" text="Código TipoCliente" />
+          <TableColumn fx:id="colDescripcion" prefWidth="524.0" text="Descripción" />
+        </columns>
+      </TableView>
+      <GridPane layoutX="250.0" layoutY="15.0" prefHeight="37.0" prefWidth="619.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="160.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="53.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="288.0" minWidth="10.0" prefWidth="113.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="304.0" minWidth="10.0" prefWidth="290.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="18.0" prefWidth="150.0" text="Código TipoCliente" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Descripción" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtDescripcion" editable="false" prefWidth="291.0" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtCodigoTipoCliente" alignment="CENTER" editable="false" prefHeight="39.0" prefWidth="43.0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <AnchorPane layoutX="997.0" layoutY="-26.0" prefHeight="215.0" prefWidth="9.0" style="-fx-background-color: #282C2C;" />
+      <Button layoutX="920.0" layoutY="225.0" mnemonicParsing="false" onAction="#ventanaClientes" prefHeight="37.0" prefWidth="108.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Clientes" />
+      <ImageView fitHeight="73.0" fitWidth="101.0" layoutX="927.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Cliente.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

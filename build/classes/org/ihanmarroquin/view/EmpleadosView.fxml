@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1600.0" style="-fx-background-color: #000000; -fx-border-color: #EDDB27;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ihanmarroquin.controller.EmpleadoController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="217.0" style="-fx-background-color: #EDDB27;">
+         <children>
+            <AnchorPane layoutY="41.0" prefHeight="109.0" prefWidth="217.0" style="-fx-background-color: #000000;">
+               <children>
+                  <ImageView fitHeight="109.0" fitWidth="190.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Empleados.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <Label layoutX="47.0" layoutY="7.0" text="Empleados">
+               <font>
+                  <Font name="Britannic Bold" size="26.0" />
+               </font>
+            </Label>
+            <VBox layoutX="25.0" layoutY="157.0" prefHeight="209.0" prefWidth="168.0">
+               <children>
+                  <Button fx:id="btnNuevo" mnemonicParsing="false" onAction="#nuevo" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Nuevo">
+                     <graphic>
+                        <ImageView fx:id="imgNuevo" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Nuevo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Eliminar">
+                     <graphic>
+                        <ImageView fx:id="imgEliminar" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Eliminar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEditar" mnemonicParsing="false" onAction="#editar" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Editar">
+                     <graphic>
+                        <ImageView fx:id="imgEditar" fitHeight="38.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Editar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnReporte" mnemonicParsing="false" onAction="#reporte" prefHeight="52.0" prefWidth="167.0" styleClass="button2" stylesheets="@../resource/BotonKinalMallCSS.css" text="Reporte">
+                     <graphic>
+                        <ImageView fx:id="imgReporte" fitHeight="43.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Reporte.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <Button layoutX="65.0" layoutY="366.0" mnemonicParsing="false" onAction="#ventanaCargos" styleClass="button1" stylesheets="@../resource/BotonKinalMallCSS.css" text="Regresar" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="213.0" prefHeight="400.0" prefWidth="8.0" style="-fx-background-color: #0AB4E5;" />
+      <GridPane fx:id="grpFechaContratacion" layoutX="235.0" layoutY="20.0" prefHeight="97.0" prefWidth="1357.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.0" minWidth="10.0" prefWidth="149.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="105.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="196.0" minWidth="10.0" prefWidth="158.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.0" minWidth="10.0" prefWidth="232.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="162.0" minWidth="10.0" prefWidth="81.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="216.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="159.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="10.0" prefWidth="230.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Código Empleado" textFill="WHITE">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Nombres" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Apellidos" textFill="WHITE" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Correo Electrónico" textFill="WHITE" GridPane.columnIndex="6">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Teléfono" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Fecha Contratación" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Sueldo" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Cod. Departamento" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Cod. Cargo" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Cod. Horario" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Cod. Admón" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCodigoEmpleado" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtNombres" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtApellidos" GridPane.columnIndex="5">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtCorreoElectronico" GridPane.columnIndex="7">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtTelefono" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtSueldo" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="cmbCodigoDepartamento" disable="true" prefHeight="25.0" prefWidth="252.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <ComboBox fx:id="cmbCodigoCargo" disable="true" prefHeight="25.0" prefWidth="198.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ComboBox fx:id="cmbCodigoHorario" disable="true" prefHeight="25.0" prefWidth="252.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <ComboBox fx:id="cmbCodigoAdministracion" disable="true" prefHeight="25.0" prefWidth="229.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <TableView fx:id="tblEmpleados" layoutX="228.0" layoutY="124.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="263.0" prefWidth="1363.0">
+        <columns>
+          <TableColumn fx:id="colCodigoEmpleado" prefWidth="94.0" text="Cod. Empleado" />
+          <TableColumn fx:id="colNombres" prefWidth="172.0" text="Nombres" />
+            <TableColumn fx:id="colApellidos" prefWidth="157.0" text="Apellidos" />
+            <TableColumn fx:id="colCorreoElectronico" prefWidth="142.0" text="Correo electrónico" />
+            <TableColumn fx:id="colTelefono" prefWidth="106.0" text="Teléfono" />
+            <TableColumn fx:id="colFechaContratacion" prefWidth="155.0" text="Fecha contratación" />
+            <TableColumn fx:id="colSueldo" prefWidth="151.0" text="Sueldo" />
+            <TableColumn fx:id="colCodigoDepartamento" prefWidth="133.0" text="Cod. Departamento" />
+            <TableColumn fx:id="colCodigoCargo" prefWidth="81.0" text="Cod. Cargo" />
+            <TableColumn fx:id="colCodigoHorario" prefWidth="84.0" text="Cod. Horario" />
+            <TableColumn fx:id="colCodigoAdministracion" prefWidth="87.0" text="Cod. Admón" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

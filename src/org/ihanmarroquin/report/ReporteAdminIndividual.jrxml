@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteAdminIndividual" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="aa1ce5a5-85d0-42b3-9266-90cbfac2acf0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="codAdministracion" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[Call sp_BuscarAdministracion($P{codAdministracion});]]>
+	</queryString>
+	<field name="codigoAdministracion" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="752" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="572" height="303" uuid="aa07626a-fd0c-4d4c-b542-01741df9d817"/>
+				<imageExpression><![CDATA["D:\\NetBeansProjects\\KinalMall2017441\\src\\org\\ihanmarroquin\\images\\Fondo2.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="0" y="468" width="572" height="284" uuid="bbc6c9a2-a30d-4b65-9772-808260fcbe4d"/>
+				<imageExpression><![CDATA["D:\\NetBeansProjects\\KinalMall2017441\\src\\org\\ihanmarroquin\\images\\Fondo1.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="155" splitType="Stretch">
+			<staticText>
+				<reportElement x="76" y="18" width="247" height="48" uuid="e204b301-ea16-4f0b-ad5c-cfca28441876"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Franklin Gothic Heavy" size="34"/>
+				</textElement>
+				<text><![CDATA[Administracion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="145" y="89" width="216" height="31" uuid="0e1a1010-ede7-4f75-bc10-3d3aba3e4342"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Franklin Gothic Heavy" size="20"/>
+				</textElement>
+				<text><![CDATA[2017441 / IN5AM]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="157" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<rectangle>
+				<reportElement x="1" y="0" width="572" height="36" backcolor="#000000" uuid="fc643ace-5707-46c0-9603-5857169e3271"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="23" y="4" width="166" height="32" forecolor="#FFFFFF" uuid="4f4ffb57-0316-4a24-8de8-280a2ee38ca9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[CódigoAdministración]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="4" width="100" height="32" forecolor="#FFFFFF" uuid="7a68d1a2-5d49-483a-910e-af42f0e03bc6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Teléfono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="261" y="4" width="83" height="32" forecolor="#FFFFFF" uuid="324ddfe4-ebed-42b4-a2dd-c0a7654fb55e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Dirección]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="48" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="1" height="48" uuid="0f4dd45f-d9b5-42b7-9a60-e423c8f25e43"/>
+			</line>
+			<line>
+				<reportElement x="200" y="0" width="1" height="48" uuid="22d9474a-58e0-4dc9-b0f7-1a69f13e5485"/>
+			</line>
+			<line>
+				<reportElement x="411" y="0" width="1" height="48" uuid="1c5489c5-15b8-49de-abc8-cb854f23ab34"/>
+			</line>
+			<line>
+				<reportElement x="571" y="0" width="1" height="48" uuid="92d98351-7092-4065-86b5-0452a03de943"/>
+			</line>
+			<textField>
+				<reportElement x="57" y="13" width="100" height="20" uuid="3d217841-9af2-44c0-b5cb-d4fa292feeda"/>
+				<textFieldExpression><![CDATA[$F{codigoAdministracion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="261" y="13" width="100" height="20" uuid="a193d146-b110-422c-9e68-94b67a6aa8e7"/>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="451" y="13" width="100" height="20" uuid="69c9090e-7d29-4a45-b20c-cb0ed16c1951"/>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="98" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="573" height="1" uuid="76ef88b2-bd2d-416b-abe8-2bf9716b5034"/>
+			</line>
+		</band>
+	</summary>
+</jasperReport>
